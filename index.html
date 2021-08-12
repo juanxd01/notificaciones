@@ -30,7 +30,8 @@
   
   <script src="./script.js"></script>
   <script>
-		Push.create("Hola mundo",{
+    setInterval(() => {
+      Push.create("Hola mundo",{
 			body: "Este es el cuerpo de la notificacion",
 			icon: "img/logo.png",
 			timeout: 4000,
@@ -39,6 +40,9 @@
 				this.close();
 			}
 		});
+    }, 5000);
+
+		
 	</script>
 </body>
 
